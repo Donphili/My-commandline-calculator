@@ -12,6 +12,26 @@ The Command-Line Calculator is a Python-based tool that allows users to perform 
 - Multiplication of two numbers
 - Division of one number by another (with error handling for division by zero)
 
+
++----------------------------------+
+                     |    Command-Line Calculator      |
+                     |                                  |
+    +------------+   |  Parse Input                     |
+    |            |   |  (e.g., "add 5 3" -> operation,   |
+    | User Input |-->|  args)                           |
+    |            |   |                                  |
+    +------------+   |  Perform Operation               |
+                     |  (e.g., addition, subtraction)    |
+                     |                                  |
+                     |  Update Calculation History      |
+                     |  (Append new calculation to       |
+                     |  the calculation_history list)   |
+                     |                                  |
+                     |  Display Result                  |
+                     |  (e.g., "Result: 8")             |
+                     +----------------------------------+
+
+
 ## Getting Started
 
 ### Prerequisites
@@ -65,6 +85,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 #Acknowledgments
 Inspiration for this project came from the need for a simple command-line calculator for quick calculations.
 Thanks to [ALX_AFRICA] for their contributions and ideas.
+
 
 # Contact
 If you have any questions or feedback, feel free to reach out to donphilip65@yahoo.com].
