@@ -18,6 +18,10 @@ header {
     padding: 20px;
 }
 
+header img {
+    max-width: 100px; /* Adjust the size as needed */
+}
+
 h1 {
     font-size: 36px;
 }
@@ -40,13 +44,6 @@ nav ul li {
     border: none;
     border-radius: 5px;
     margin-top: 20px;
-}
-
-.section {
-    padding: 20px;
-    background-color: #fff;
-    margin: 20px;
-    border-radius: 5px;
 }
 
 .feature {
