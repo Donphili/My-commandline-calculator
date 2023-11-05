@@ -9,22 +9,19 @@
     <p id="result"></p>
 
     <script>
-        // Addition
+        // JavaScript functions for mathematical operations
         function add(a, b) {
             return a + b;
         }
 
-        // Subtraction
         function subtract(a, b) {
             return a - b;
         }
 
-        // Multiplication
         function multiply(a, b) {
             return a * b;
         }
 
-        // Division
         function divide(a, b) {
             if (b === 0) {
                 return "Cannot divide by zero";
@@ -32,21 +29,40 @@
             return a / b;
         }
 
-        // Example usage
-        let num1 = 10;
-        let num2 = 5;
-        let resultAdd = add(num1, num2);
-        let resultSubtract = subtract(num1, num2);
-        let resultMultiply = multiply(num1, num2);
-        let resultDivide = divide(num1, num2);
+        // Function to handle user input
+        function handleUserInput() {
+            let userInput = prompt("Enter your command (e.g., 'add 5 3' or 'exit'): ");
+            let inputList = userInput.split(" ");
 
-        // Display the results
-        document.getElementById("result").innerHTML = `
-            Addition: ${resultAdd} <br>
-            Subtraction: ${resultSubtract} <br>
-            Multiplication: ${resultMultiply} <br>
-            Division: ${resultDivide}
-        `;
+            if (inputList[0] === "exit") {
+                alert("Goodbye!");
+            } else if (inputList.length < 3) {
+                alert("Invalid input. Please use the format: <operation> <number1> <number2>");
+            } else {
+                let operation = inputList[0];
+                let num1 = parseFloat(inputList[1]);
+                let num2 = parseFloat(inputList[2]);
+
+                let result;
+
+                if (operation === "add") {
+                    result = add(num1, num2);
+                } else if (operation === "subtract") {
+                    result = subtract(num1, num2);
+                } else if (operation === "multiply") {
+                    result = multiply(num1, num2);
+                } else if (operation === "divide") {
+                    result = divide(num1, num2);
+                } else {
+                    alert("Invalid operation. Supported operations: add, subtract, multiply, divide");
+                    handleUserInput(); // Restart input loop
+                }
+
+                document.getElementById("result").innerHTML = `Result: ${result}`;
+            }
+        }
+
+        handleUserInput(); // Start the input loop
     </script>
 </body>
 </html>
