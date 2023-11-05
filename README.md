@@ -10,7 +10,7 @@ This is a simple command-line calculator that allows you to perform basic mathem
 
 ## Usage
 
-To perform calculations, enter commands in the following format:
+To perform calculations,enter commands in these formats:
 
 - `add num1 num2` for addition
 - `subtract num1 num2` for subtraction
