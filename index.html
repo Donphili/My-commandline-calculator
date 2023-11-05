@@ -1,68 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mathematical Functions</title>
+    <title>Web Calculator</title>
 </head>
 <body>
-    <h1>Mathematical Functions</h1>
-
-    <p id="result"></p>
-
+    <h1>Web Calculator</h1>
+    <input type="text" id="display" readonly>
+    <div>
+        <button onclick="appendToDisplay('7')">7</button>
+        <button onclick="appendToDisplay('8')">8</button>
+        <button onclick="appendToDisplay('9')">9</button>
+        <button onclick="appendToDisplay('+')">+</button>
+    </div>
+    <div>
+        <button onclick="appendToDisplay('4')">4</button>
+        <button onclick="appendToDisplay('5')">5</button>
+        <button onclick="appendToDisplay('6')">6</button>
+        <button onclick="appendToDisplay('-')">-</button>
+    </div>
+    <div>
+        <button onclick="appendToDisplay('1')">1</button>
+        <button onclick="appendToDisplay('2')">2</button>
+        <button onclick="appendToDisplay('3')">3</button>
+        <button onclick="appendToDisplay('*')">*</button>
+    </div>
+    <div>
+        <button onclick="appendToDisplay('0')">0</button>
+        <button onclick="calculate()">=</button>
+        <button onclick="clearDisplay()">C</button>
+        <button onclick="appendToDisplay('/')">/</button>
+    </div>
     <script>
-        // JavaScript functions for mathematical operations
-        function add(a, b) {
-            return a + b;
+        let currentInput = '';
+
+        function appendToDisplay(value) {
+            currentInput += value;
+            document.getElementById('display').value = currentInput;
         }
 
-        function subtract(a, b) {
-            return a - b;
-        }
-
-        function multiply(a, b) {
-            return a * b;
-        }
-
-        function divide(a, b) {
-            if (b === 0) {
-                return "Cannot divide by zero";
-            }
-            return a / b;
-        }
-
-        // Function to handle user input
-        function handleUserInput() {
-            let userInput = prompt("Enter your command (e.g., 'add 5 3' or 'exit'): ");
-            let inputList = userInput.split(" ");
-
-            if (inputList[0] === "exit") {
-                alert("Goodbye!");
-            } else if (inputList.length < 3) {
-                alert("Invalid input. Please use the format: <operation> <number1> <number2>");
-            } else {
-                let operation = inputList[0];
-                let num1 = parseFloat(inputList[1]);
-                let num2 = parseFloat(inputList[2]);
-
-                let result;
-
-                if (operation === "add") {
-                    result = add(num1, num2);
-                } else if (operation === "subtract") {
-                    result = subtract(num1, num2);
-                } else if (operation === "multiply") {
-                    result = multiply(num1, num2);
-                } else if (operation === "divide") {
-                    result = divide(num1, num2);
-                } else {
-                    alert("Invalid operation. Supported operations: add, subtract, multiply, divide");
-                    handleUserInput(); // Restart input loop
-                }
-
-                document.getElementById("result").innerHTML = `Result: ${result}`;
+        function calculate() {
+            try {
+                currentInput = eval(currentInput);
+                document.getElementById('display').value = currentInput;
+            } catch (error) {
+                document.getElementById('display').value = 'Error';
             }
         }
 
-        handleUserInput(); // Start the input loop
+        function clearDisplay() {
+            currentInput = '';
+            document.getElementById('display').value = '';
+        }
     </script>
 </body>
 </html>
