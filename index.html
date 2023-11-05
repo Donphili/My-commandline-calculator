@@ -9,13 +9,20 @@
         }
         .calculator {
             background-color: #fff;
-            padding: 20px;
+            padding: 30px;
             display: inline-block;
-            width: 400px; /* Increase the width to your desired size */
+            width: 480px; /* Increase the width to your desired size */
             margin: 0 auto;
         }
         input {
-            width: 100%;
+            width: 150%;
+            font-size: 30px; /* Increase the font size for the display */
+        }
+        button {
+            width: 70px; /* Increase button width */
+            height: 100px; /* Increase button height */
+            font-size: 20px; /* Increase button font size */
+            margin: 5px; /* Add margin for spacing between buttons */
         }
     </style>
 </head>
@@ -50,10 +57,16 @@
     </div>
     <script>
         let currentInput = '';
+        let isTyping = false; // Variable to stop movement while typing
 
         function appendToDisplay(value) {
-            currentInput += value;
-            document.getElementById('display').value = currentInput;
+            if (!isTyping) {
+                isTyping = true; // Calculator is static when typing
+                document.getElementById('display').value = value;
+            } else {
+                currentInput += value;
+                document.getElementById('display').value = currentInput;
+            }
         }
 
         function calculate() {
@@ -62,12 +75,15 @@
                 document.getElementById('display').value = currentInput;
             } catch (error) {
                 document.getElementById('display').value = 'Error';
+            } finally {
+                isTyping = false; // Calculator can be moved again after calculation
             }
         }
 
         function clearDisplay() {
             currentInput = '';
             document.getElementById('display').value = '';
+            isTyping = false; // Calculator can be moved again
         }
     </script>
 </body>
