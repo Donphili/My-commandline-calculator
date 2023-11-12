@@ -37,13 +37,14 @@ Goodbye!
 
 Deployment
 
-The project is deployed at https://donphili.github.io/My-commandline-calculator/
+[Visit the deployed project](https://donphili.github.io/My-commandline-calculator/)
 
 Author
 
 Onyejekwe Philip Emeka
 
-https://www.linkedin.com/in/onyejekwe-philip-emeka-18700226a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+[LinkedIn Profile](https://www.linkedin.com/in/onyejekwe-philip-emeka-18700226a)
+
 
 
 ## License
