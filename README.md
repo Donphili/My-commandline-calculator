@@ -35,8 +35,20 @@ Enter your command (e.g., 'add 5 3', 'history', or 'exit'): exit
 Goodbye!
 
 
+Deployment
+
+The project is deployed at https://donphili.github.io/My-commandline-calculator/
+
+Author
+
+Onyejekwe Philip Emeka
+
+https://www.linkedin.com/in/onyejekwe-philip-emeka-18700226a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+
 
