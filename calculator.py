@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 
-
-# Imports necessary functions for mathematical operations
+# Import necessary functions for mathematical operations
 from math_functions import add, subtract, multiply, divide
 
 # Create a loop for continuous user interaction
@@ -21,6 +20,7 @@ while True:
     if len(input_list) < 3:
         print("Invalid input. Please use the format: <operation> <number1> <number2>")
     else:
+        # Extract operation and numbers from user input
         operation = input_list[0]
         num1 = float(input_list[1])
         num2 = float(input_list[2])
@@ -38,4 +38,5 @@ while True:
             print("Invalid operation. Supported operations: add, subtract, multiply, divide")
             continue
 
+        # Display the result
         print(f"Result: {result}")
