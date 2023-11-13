@@ -8,6 +8,10 @@ function clearDisplay() {
     display.value = '';
 }
 
+function deleteLast() {
+    display.value = display.value.slice(0, -1);
+}
+
 function calculate() {
     try {
         display.value = eval(display.value);
@@ -38,8 +42,5 @@ for (let operation of operations) {
     document.querySelector('.keys').appendChild(button);
 }
 
-// Equals button
-let equalsButton = document.createElement('button');
-equalsButton.textContent = '=';
-equalsButton.onclick = calculate;
-document.querySelector('.keys').appendChild(equalsButton);
+// Additional buttons
+let delButton = document.createElement('button
