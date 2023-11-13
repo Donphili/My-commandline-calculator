@@ -21,6 +21,7 @@ To view calculation history, enter `history`.
 
 To exit the calculator, enter `exit`.
 
+
 ## Example
 
 
@@ -34,12 +35,18 @@ add 5 3 = 8
 Enter your command (e.g., 'add 5 3', 'history', or 'exit'): exit
 Goodbye!
 
+# User Interface
 
-Deployment
+For a more user-friendly experience, you can access the calculator through the web-based user interface. Click the link below to launch the interface:
 
-[Visit the deployed project](https://donphili.github.io/my-commandline-calculator-landing-page/)
+[Launch Calculator User Interface](ttps://donphili.github.io/my-commandline-calculator-landing-page/)
 
-Author
+
+# DEPLOYMENT
+
+[Visit the deployed project](ttps://donphili.github.io/my-commandline-calculator-landing-page/)
+
+# Author
 
 Onyejekwe Philip Emeka
 
@@ -50,6 +57,3 @@ Onyejekwe Philip Emeka
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
-
-
