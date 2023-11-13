@@ -1,14 +1,14 @@
-# Command-Line Calculator
+# COMMAND-LINE CALCULATOR
 
 This is a simple command-line calculator that allows you to perform basic mathematical operations.
 
-## Getting Started
+# GETTING STARTED
 
 1. Clone this repository to your local machine.
 2. Open your terminal and navigate to the project directory.
 3. Run the `calculator.py` script to start the calculator.
 
-## Usage
+# USAGE
 
 To perform calculations,enter commands in these formats:
 
@@ -22,7 +22,7 @@ To view calculation history, enter `history`.
 To exit the calculator, enter `exit`.
 
 
-## Example
+# EXAMPLE
 
 
 $ python calculator.py
@@ -35,7 +35,7 @@ add 5 3 = 8
 Enter your command (e.g., 'add 5 3', 'history', or 'exit'): exit
 Goodbye!
 
-# User Interface
+# USER INTERFACE
 
 For a more user-friendly experience, you can access the calculator through the web-based user interface. Click the link below to launch the interface:
 
@@ -46,7 +46,7 @@ For a more user-friendly experience, you can access the calculator through the w
 
 [Visit the deployed project](https://donphili.github.io/my-commandline-calculator-landing-page/)
 
-# Author
+# AUTHOR
 
 Onyejekwe Philip Emeka
 
@@ -54,6 +54,6 @@ Onyejekwe Philip Emeka
 
 
 
-## License
+# LICENSE
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
