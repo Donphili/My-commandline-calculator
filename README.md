@@ -37,7 +37,7 @@ Goodbye!
 
 Deployment
 
-[Visit the deployed project](https://donphili.github.io/My-commandline-calculator/)
+[Visit the deployed project](https://donphili.github.io/my-commandline-calculator-landing-page/)
 
 Author
 
