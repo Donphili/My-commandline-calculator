@@ -39,12 +39,12 @@ Goodbye!
 
 For a more user-friendly experience, you can access the calculator through the web-based user interface. Click the link below to launch the interface:
 
-[Launch Calculator User Interface](ttps://donphili.github.io/my-commandline-calculator-landing-page/)
+[Launch Calculator User Interface](https://donphili.github.io/my-commandline-calculator-landing-page/)
 
 
 # DEPLOYMENT
 
-[Visit the deployed project](ttps://donphili.github.io/my-commandline-calculator-landing-page/)
+[Visit the deployed project](https://donphili.github.io/my-commandline-calculator-landing-page/)
 
 # Author
 
