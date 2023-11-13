@@ -1,4 +1,8 @@
-# COMMAND-LINE CALCULATOR
+# PROJECT NAME
+  
+  command-line calculator
+
+# INTRODUCTION
 
 This is a simple command-line calculator that allows you to perform basic mathematical operations.
 
